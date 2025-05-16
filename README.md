@@ -13,8 +13,9 @@ Contem os Arquivos:
  E as pastas:
   - Node_modules
   - Cypress (Pasta contendo o arquivo Cypress a ser rodado)
-  - Escopo (Pasta contendo a premissa para os testes)
- 
+  - Scope (Pasta contendo a premissa para os testes)
+  - Solution (Pasta contendo a resolução relativa aos problemas e casos de testes totais encontrados no site)
+    
  ## Testes
 
-Neste Github há 2 testes, um propositalmente falhando, e outro passando, o primeiro sobre o Formulário de Contato, é o de cenário de sucesso, e o segundo sobre a Calculadora de orçamento é o de cenário de falha proposital, se baseando num erro já ocorrido no site
+Neste Github há 2 testes, um propositalmente falhando, e outro passando, o primeiro sobre o Formulário de Contato, é o de cenário de sucesso, e o segundo sobre a Calculadora de orçamento é o de cenário de falha proposital, se baseando num erro já ocorrido no site, os comentários relativos aos testes são descritivos e extensos propositalmente para se apresentar domínio e entendimento sobre os comandos utilizados. Quanto à lingua utilizada apesar de uma boa prática ser padronizar tudo para inglês, os comentários foram descritos em português para mais rápida compreensão e correção, caso necessário, ao se tratar de um teste técnico
