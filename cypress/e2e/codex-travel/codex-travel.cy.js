@@ -7,7 +7,7 @@ describe('Codex Travel - Testes Funcionais', () => {
       cy.get("#mensagem").type("Gostaria de obter mais informações"); // Define no campo de id "mensagem" a mensagem "Gostaria de obter mais informações"
       cy.get('#contatoForm > button').click(); // Clica no botão de envio do contato
       cy.on('window:alert', (alertText) => { // Cy.on cria um event listener, para esperar o alerta aparecer e manipulá-lo
-        expect(alertText).to.equal('Mensagem enviada com sucesso!'); //A validação é feita para saber se ao desejar entrar em contato, o modal é aberto com a mensagem certa
+        expect(alertText).to.equal('Mensagem enviada com sucesso!'); //A validação é feita para saber se ao desejar entrar em contato, o alerta é aberto com a mensagem certa
       });
     });
   });
@@ -23,7 +23,7 @@ describe('Codex Travel - Testes Funcionais', () => {
     cy.get("#valorPassagem").type(0); // Define o valor da passagem no campo de id "valorPassagem", está sendo definido como 0
     cy.get("#numeroPessoas").type(0); // Define o número de pessoas no campo de id "numeroPessoas", está sendo definido como 0
     cy.get("#diasHospedagem").type(0); // Define a quantidade de dias de hospedagem no campo de id "diasHospedagem", está sendo definido como 0
-    cy.get("#dataNascimento").type(dataNascimentoMenosVinte); // Define a data de nascimento no campo de id "dataNascimento" (deve ser acima de 18 anos, no caso, 24 anos)
+    cy.get("#dataNascimento").type(dataNascimentoMenosVinte); // Define a data de nascimento no campo de id "dataNascimento" (deve ser acima de 18 anos, no caso, 20 anos)
     cy.get("#orcamentoForm > button").click(); // Clica no botão para executar o cálculo de orçamento
     cy.get('#resultadoOrcamento').should('have.text', 'Orçamento total: R$ 0.00'); // Com os campos acima zerados, o resultado obtido pelo id "resultadoOrcamento" deveria ser zerado, mas retorna 1000.00
     
